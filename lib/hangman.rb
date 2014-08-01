@@ -6,6 +6,8 @@ class Hangman
         attr_reader :mistakes
     # The letters already guessed. Helps prevent letters from being counted twice.
         attr_reader :guessed
+    # This is what the user should see.
+        attr_reader :display
     # Initializes the data needed for the game using parameter word as the word to be guessed
         def initialize(word=dictionary_sample)
             @actual, @mistakes, @guessed, @display = word, 0, Array.new, Array.new(@actual.length) {"_"}
