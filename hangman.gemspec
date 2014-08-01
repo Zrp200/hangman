@@ -5,4 +5,5 @@ Gem::Specification.new do |hangman|
     hangman.license = "MIT"
     hangman.extra_rdoc_files = %w(README.md LICENSE)
     hangman.version = '0.0.0.pre'
+    hangman.executables << "hangman"
 end
